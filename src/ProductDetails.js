@@ -1,11 +1,9 @@
 /* global aa */
-
 import { useLocation } from "react-router-dom";
 import React from 'react';
 
-const indexName = 'demo_ecommerce';
-
-function HitDetails() {
+function ProductInfo() {
+  const indexName = 'demo_ecommerce';
   const location = useLocation()
   const { product } = location.state
     return (
@@ -33,4 +31,4 @@ function HitDetails() {
     );
   }
 
-  export const HitDetailsWithInsights = (HitDetails)
+  export const ProductDetails = (ProductInfo)

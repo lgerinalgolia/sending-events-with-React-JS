@@ -4,14 +4,14 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 
-function Hit({ hit, insights }) {
+function Product({ hit, insights }) {
   return (
     <Link to={{
       pathname: `/products/${hit.objectID}`,
       state: { product: hit }
     }} onClick={() => {
       insights('clickedObjectIDsAfterSearch', {
-        eventName: 'Clicked on product',
+        eventName: 'Search Result Clicked',
       });
     }}>
       <div className="hit-card">
@@ -30,9 +30,9 @@ function Hit({ hit, insights }) {
   );
 }
 
-Hit.propTypes = {
+Product.propTypes = {
   hit: PropTypes.object.isRequired,
   insights: PropTypes.func.isRequired,
 };
 
-export const HitWithInsights = connectHitInsights(window.aa)(Hit);
+export const ProductCard = connectHitInsights(window.aa)(Product);
