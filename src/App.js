@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route path="/products/:productID">
+          <Route path="/products/:productID/:queryID">
             <ProductDetails/>
           </Route>
           <Route path="/">

@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 function Product({ hit, insights }) {
   return (
     <Link to={{
-      pathname: `/products/${hit.objectID}`,
-      state: { product: hit }
+      pathname: `/products/${hit.objectID}/${hit.__queryID}`
     }} onClick={() => {
       insights('clickedObjectIDsAfterSearch', {
         eventName: 'Search Result Clicked',
