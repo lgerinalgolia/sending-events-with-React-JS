@@ -1,8 +1,8 @@
-/* global aa */
 import { useLocation } from "react-router-dom";
 import React from 'react';
+import aa from 'search-insights';
 
-function ProductInfo() {
+const ProductDetails = () => {
   const indexName = 'demo_ecommerce';
   const location = useLocation()
   const { product } = location.state
@@ -31,4 +31,4 @@ function ProductInfo() {
     );
   }
 
-  export const ProductDetails = (ProductInfo)
+  export default ProductDetails

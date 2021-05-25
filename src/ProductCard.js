@@ -1,5 +1,4 @@
 import { connectHitInsights, Highlight } from 'react-instantsearch-dom';
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -29,10 +28,5 @@ function Product({ hit, insights }) {
     </Link>
   );
 }
-
-Product.propTypes = {
-  hit: PropTypes.object.isRequired,
-  insights: PropTypes.func.isRequired,
-};
 
 export const ProductCard = connectHitInsights(window.aa)(Product);
