@@ -4,10 +4,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Product = ({ hit, insights }) => {
+  const url = `/products/${hit.objectID}?queryID=${hit.__queryID}`;
   return (
-    <Link to={{
-      pathname: `/products/${hit.objectID}?queryID=${hit.__queryID}`
-    }} onClick={() => {
+    <Link to={{pathname: url}} onClick={() => {
       insights('clickedObjectIDsAfterSearch', {
         eventName: 'Search Result Clicked',
       });
