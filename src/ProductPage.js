@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import aa from 'search-insights';
 import algoliasearch from 'algoliasearch/lite';
 
-const ProductDetails = () => {
+const ProductPage = () => {
   const indexName = 'demo_ecommerce';
   const client = algoliasearch('B1G2GM9NG0', 'aadef574be1f9252bb48d4ea09b5cfe5');
   const index = client.initIndex(indexName);
@@ -39,4 +39,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductPage;

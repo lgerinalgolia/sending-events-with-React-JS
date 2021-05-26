@@ -15,7 +15,7 @@ const searchClient = algoliasearch(
   'aadef574be1f9252bb48d4ea09b5cfe5'
 );
 
-const Search = () => {
+const SearchPage = () => {
   return (
     <div className="ais-InstantSearch">
       <h1>How to send events with React InstantSearch</h1>
@@ -35,4 +35,4 @@ const Search = () => {
   )
 };
 
-export default Search;
+export default SearchPage;

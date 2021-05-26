@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Search from './Search';
-import ProductDetails from './ProductDetails';
+import SearchPage from './SearchPage';
+import ProductPage from './ProductPage';
 import { Switch, Route} from 'react-router-dom';
 import aa from 'search-insights';
 
@@ -16,10 +16,10 @@ const App = () => {
   return (
     <Switch>
       <Route path="/products/:productID/:queryID">
-        <ProductDetails/>
+        <ProductPage/>
       </Route>
       <Route path="/">
-        <Search />
+        <SearchPage />
       </Route>
     </Switch>
   );
