@@ -1,12 +1,12 @@
+import aa from 'search-insights';
 import { connectHitInsights, Highlight } from 'react-instantsearch-dom';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import aa from 'search-insights';
 
 const Product = ({ hit, insights }) => {
   return (
     <Link to={{
-      pathname: `/products/${hit.objectID}/${hit.__queryID}`
+      pathname: `/products/${hit.objectID}?queryID=${hit.__queryID}`
     }} onClick={() => {
       insights('clickedObjectIDsAfterSearch', {
         eventName: 'Search Result Clicked',

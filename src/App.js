@@ -15,7 +15,7 @@ aa('setUserToken', 'user-1');
 const App = () => {
   return (
     <Switch>
-      <Route path="/products/:productID/:queryID">
+      <Route path="/products/:productID?queryID=:queryID">
         <ProductPage/>
       </Route>
       <Route path="/">
