@@ -32,7 +32,7 @@ const SearchPage = () => {
         </div>
       </InstantSearch>
     </div>
-  )
+  );
 };
 
 export default SearchPage;
