@@ -1,7 +1,7 @@
 import { connectHitInsights, Highlight } from 'react-instantsearch-dom';
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import aa from 'search-insights';
 
 function Product({ hit, insights }) {
   return (
@@ -28,4 +28,4 @@ function Product({ hit, insights }) {
   );
 }
 
-export const ProductCard = connectHitInsights(window.aa)(Product);
+export const ProductCard = connectHitInsights(aa)(Product);
