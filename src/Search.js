@@ -6,7 +6,7 @@ import {
   Pagination,
   RefinementList,
   SearchBox,
-  } from 'react-instantsearch-dom';
+} from 'react-instantsearch-dom';
 import algoliasearch from 'algoliasearch/lite';
 import { ProductCard } from './ProductCard';
 
