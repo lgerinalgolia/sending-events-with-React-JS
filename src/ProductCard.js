@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import aa from 'search-insights';
 
-function Product({ hit, insights }) {
+const Product = ({ hit, insights }) => {
   return (
     <Link to={{
       pathname: `/products/${hit.objectID}/${hit.__queryID}`
@@ -26,6 +26,6 @@ function Product({ hit, insights }) {
       </div>
     </Link>
   );
-}
+};
 
 export const ProductCard = connectHitInsights(aa)(Product);

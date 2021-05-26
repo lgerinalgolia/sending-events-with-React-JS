@@ -12,19 +12,17 @@ aa('init', {
 
 aa('setUserToken', 'user-1');
 
-class App extends Component {
-  render() {
-    return (
-      <Switch>
-        <Route path="/products/:productID/:queryID">
-          <ProductDetails/>
-        </Route>
-        <Route path="/">
-          <Search />
-        </Route>
-      </Switch>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Switch>
+      <Route path="/products/:productID/:queryID">
+        <ProductDetails/>
+      </Route>
+      <Route path="/">
+        <Search />
+      </Route>
+    </Switch>
+  );
+};
 
 export default App;
